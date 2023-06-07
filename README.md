@@ -4,8 +4,7 @@ openvpn, wiregaurd,V2ray and so many options indeed in a simple bash script
 ## Installing Commands:
 
 #### 3proxy:
-
-    https://github.com/opiran-club/All-vpn-protocle/blob/main/3proxy/README.md
+     https://github.com/opiran-club/All-vpn-protocle/blob/main/3proxy/README.md
 
 #### REALLITY:
    - https://github.com/opiran-club/All-vpn-protocle/blob/main/REALITY-singbox/README.md
