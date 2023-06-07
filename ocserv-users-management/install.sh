@@ -222,8 +222,8 @@ Config_System() {
     echo
 }
 
-INSTALL_PANNEL_Env() {
-     echo -e "\e[0;36m"Installing Pannel Environment..."\e[0m"
+INSTALL_PANEL_Env() {
+     echo -e "\e[0;36m"Installing Panel Environment..."\e[0m"
     apt install python3 python3-pip virtualenv build-essential python3-dev nginx git -y
     if [    "$?" = "0" ];then
         echo -e "\e[0;32m"Environment Installation Was Successful."\e[0m"
@@ -234,10 +234,10 @@ INSTALL_PANNEL_Env() {
 }
 
 GIT_PROJECT(){
-    echo -e "\e[0;36m"Get Project From Git Repository..."\e[0m"
-    git clone https://github.com/mmtaee/Ocserv-Vpn-User-Management.git
+    echo -e "\e[0;36m"Get Project From Github..."\e[0m"
+    wget -4 https://github.com/opiran-club/All-vpn-protocle/ocserv-users-management
     if [    "$?" = "0" ];then
-        echo -e "\e[0;32m"Git Clone Was Successful."\e[0m"
+        echo -e "\e[0;32m"Clone Was Successful."\e[0m"
     else
         echo -e "\e[0;31m"Cannot "Git Clone" Project From "github"."\e[0m"
         exit 1
@@ -247,15 +247,15 @@ GIT_PROJECT(){
 PRO_DIR() {
     echo -e "\e[0;36m"Preparation Directorys And Files..."\e[0m"
 
-    mkdir /var/www/html/ocserv_pannel/
+    mkdir /var/www/html/ocserv_panel/
 
-    cp -r $(pwd)/* /var/www/html/ocserv_pannel/
+    cp -r $(pwd)/* /var/www/html/ocserv_panel/
 }
 
 PRO_VENV() {
     echo -e "\e[0;36m"Creating Python virtualenv..."\e[0m"
 
-    cd /var/www/html/ocserv_pannel/
+    cd /var/www/html/ocserv_panel/
 
     virtualenv -p python3 venv
 
@@ -271,7 +271,7 @@ PRO_VENV() {
 
     echo -e yes\n |./manage.py collectstatic
 
-    chown -R www-data /var/www/html/ocserv_pannel/
+    chown -R www-data /var/www/html/ocserv_panel/
 
     echo www-data ALL = NOPASSWD: /usr/bin/ocpasswd >> /etc/sudoers
 
@@ -286,8 +286,8 @@ PRO_SERVICES() {
     echo -e "\e[0;36m"Preparation Nginx"\e[0m"
     #################COPY CONFIG FILE
     rm -rf /etc/nginx/sites-enabled/default
-    mv /var/www/html/ocserv_pannel/configs/ocserv_nginx.conf /etc/nginx/conf.d/
-    mv /var/www/html/ocserv_pannel/configs/ocserv_uwsgi.service /lib/systemd/system
+    mv /var/www/html/ocserv_panel/configs/ocserv_nginx.conf /etc/nginx/conf.d/
+    mv /var/www/html/ocserv_panel/configs/ocserv_uwsgi.service /lib/systemd/system
     systemctl daemon-reload;systemctl restart nginx ocserv_uwsgi.service;systemctl enable nginx ocserv_uwsgi.service;
     NGINX_STATE=`systemctl is-active nginx`
     if [    "$NGINX_STATE" = "active"  ]; then
