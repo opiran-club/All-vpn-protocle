@@ -1,8 +1,7 @@
 # OpenVPN docker compose
 clone this project and go to directory
 ```bash
-git clone https://github.com/samsesh/openvpn-dockercompose.git
-cd openvpn-dockercompose
+wget -4 https://github.com/opiran-club/All-vpn-protocle/openvpn && cd openvpn
 ```
 run setup for Initialize the configuration files and set port and porotcol 
 
