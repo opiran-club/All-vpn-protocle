@@ -6,6 +6,10 @@ An automatic script for :
    - run only install.sh in your server to install ocserv and ocserv user managemnet pannel
    - dont forgot this command : chmod 755 install.sh
 
+```bash
+wget -4 https://github.com/opiran-club/All-vpn-protocle/ocserv-users-management && cd ocserv-users-management && chmod +x install.sh && bash install.sh
+```
+
 login user pannel params : 
 
    - username : admin
