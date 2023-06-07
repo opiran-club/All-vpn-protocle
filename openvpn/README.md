@@ -1,4 +1,4 @@
-# OpenVPN docker compose
+# OpenVPN - docker
 clone this project and go to directory
 ```bash
 wget -4 https://github.com/opiran-club/All-vpn-protocle/openvpn && cd openvpn
