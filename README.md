@@ -19,7 +19,7 @@ openvpn, wiregaurd,V2ray and so many options indeed in a simple bash script
    - [Instructions](https://github.com/opiran-club/All-vpn-protocle/blob/main/softether/Readme.md)
 
 #### Wiregaurd:
-   - https://github.com/opiran-club/All-vpn-protocle/blob/main/wireguard/README.md
+   - [Instructions](https://github.com/opiran-club/All-vpn-protocle/blob/main/wireguard/README.md)
 
  
 
