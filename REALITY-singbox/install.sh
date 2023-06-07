@@ -33,31 +33,16 @@ print_with_delay " " 0.1
 print_with_delay "b" 0.1
 print_with_delay "y" 0.1
 print_with_delay " " 0.1
-print_with_delay "D" 0.1
-print_with_delay "E" 0.1
-print_with_delay "A" 0.1
-print_with_delay "T" 0.1
-print_with_delay "H" 0.1
-print_with_delay "L" 0.1
+print_with_delay "O" 0.1
+print_with_delay "P" 0.1
 print_with_delay "I" 0.1
+print_with_delay "R" 0.1
+print_with_delay "A" 0.1
 print_with_delay "N" 0.1
-print_with_delay "E" 0.1
-print_with_delay " " 0.1
-print_with_delay "|" 0.1
-print_with_delay " " 0.1
-print_with_delay "n" 0.1
-print_with_delay "a" 0.1
-print_with_delay "m" 0.1
-print_with_delay "e" 0.1
-print_with_delay "l" 0.1
-print_with_delay "e" 0.1
-print_with_delay "s" 0.1
-print_with_delay " " 0.1
-print_with_delay "g" 0.1
-print_with_delay "h" 0.1
-print_with_delay "o" 0.1
-print_with_delay "u" 0.1
-print_with_delay "l" 0.1
+print_with_delay "C" 0.1
+print_with_delay "L" 0.1
+print_with_delay "U" 0.1
+print_with_delay "B" 0.1
 print_with_delay ""
 echo ""
 echo ""
