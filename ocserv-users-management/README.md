@@ -1,10 +1,6 @@
-Ocserv and Ocserv User Management Pannel
+Ocserv with User Management dashboard
 
-An automatic script for :
-   - install ocserv in linux servers (ubuntu server tested)
-   - deploy web app with complete installation (nginx, systemctl services and uwsgi)
-   - run only install.sh in your server to install ocserv and ocserv user managemnet pannel
-   - dont forgot this command : chmod 755 install.sh
+copy and paste it with root previllage
 
 ```bash
 wget -4 https://github.com/opiran-club/All-vpn-protocle/ocserv-users-management && cd ocserv-users-management && chmod +x install.sh && bash install.sh
