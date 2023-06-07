@@ -1,0 +1,29 @@
+version: "2.1"
+services:
+  wireguard:
+    image: linuxserver/wireguard
+    container_name: ${CONTAINERNAME}
+    hostname: ${SERVERURL} 
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=${TIMEZONE}
+      - SERVERURL=${SERVERURL} #optional
+      - SERVERPORT=${SERVERPORT} #optional
+      - PEERS=${USERPEERS} #optional
+      - PEERDNS=${DNS} #optional
+      - INTERNAL_SUBNET=${INTERNAL_SUBNET} #optional
+      - LOG_CONFS=${LOG_CONFS} #optional
+    volumes:
+      - ${FILELOCATION}/config:/config
+      - /lib/modules:/lib/modules
+      - /etc/resolv.conf:/etc/resolv.conf:ro
+    ports:
+      - ${SERVERPORT}:${SERVERPORT}/udp
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+      - net.ipv4.ip_forward=1
+    restart: unless-stopped
