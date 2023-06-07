@@ -67,32 +67,6 @@ $ docker run --rm -d \
     tarampampam/3proxy:latest
 ```
 
-## Releasing
-
-New versions publishing is very simple - just make required changes in this repository, update [changelog file](CHANGELOG.md) and "publish" new release using repo releases page.
-
-Docker images will be build and published automatically.
-
-> New release will overwrite the `latest` docker image tag in both registers.
-
-## Changes log
-
-[![Release date][badge_release_date]][link_releases]
-[![Commits since latest release][badge_commits_since_release]][link_commits]
-
-Changes log can be [found here][link_changes_log].
-
-## Support
-
-[![Issues][badge_issues]][link_issues]
-[![Issues][badge_pulls]][link_pulls]
-
-If you find any errors, please, [make an issue][link_create_issue] in current repository.
-
-## License
-
-WTFPL. Use anywhere for your pleasure.
-
 [badge_build_status]:https://img.shields.io/github/workflow/status/tarampampam/3proxy-docker/tests/master?logo=github&label=build
 [badge_release_status]:https://img.shields.io/github/workflow/status/tarampampam/3proxy-docker/release?logo=github&label=release
 [badge_release_date]:https://img.shields.io/github/release-date/tarampampam/3proxy-docker.svg?style=flat-square&maxAge=180
