@@ -1,16 +1,4 @@
-<p align="center">
-  <img src="https://hsto.org/webt/kp/e1/ud/kpe1udvcjss_-wtmrws-w9radke.png" width="96" alt="" />
-</p>
-
-# Docker image with [3proxy][link_3proxy]
-
-[![Build Status][badge_build_status]][link_build_status]
-[![Release Status][badge_release_status]][link_build_status]
-[![Image size][badge_size_latest]][link_docker_hub]
-[![Docker Pulls][badge_docker_pulls]][link_docker_hub]
-[![License][badge_license]][link_license]
-
-## Why this image created?
+## 3proxy :
 
 3proxy is awesome and lightweight proxy-server. This image contains stable version with it and can be configured using environment variables. By default, it uses anonymous (information about client hiding) proxy settings. Logging in JSON format.
 
@@ -66,25 +54,3 @@ $ docker run --rm -d \
     -e "PRIMARY_RESOLVER=2001:4860:4860::8888" \
     tarampampam/3proxy:latest
 ```
-
-[badge_build_status]:https://img.shields.io/github/workflow/status/tarampampam/3proxy-docker/tests/master?logo=github&label=build
-[badge_release_status]:https://img.shields.io/github/workflow/status/tarampampam/3proxy-docker/release?logo=github&label=release
-[badge_release_date]:https://img.shields.io/github/release-date/tarampampam/3proxy-docker.svg?style=flat-square&maxAge=180
-[badge_commits_since_release]:https://img.shields.io/github/commits-since/tarampampam/3proxy-docker/latest.svg?style=flat-square&maxAge=180
-[badge_issues]:https://img.shields.io/github/issues/tarampampam/3proxy-docker.svg?style=flat-square&maxAge=180
-[badge_pulls]:https://img.shields.io/github/issues-pr/tarampampam/3proxy-docker.svg?style=flat-square&maxAge=180
-[badge_license]:https://img.shields.io/github/license/tarampampam/3proxy-docker.svg?longCache=true
-[badge_size_latest]:https://img.shields.io/docker/image-size/tarampampam/3proxy/latest?maxAge=30
-[badge_docker_pulls]:https://img.shields.io/docker/pulls/tarampampam/3proxy.svg
-[link_releases]:https://github.com/tarampampam/3proxy-docker/releases
-[link_commits]:https://github.com/tarampampam/3proxy-docker/commits
-[link_changes_log]:https://github.com/tarampampam/3proxy-docker/blob/master/CHANGELOG.md
-[link_issues]:https://github.com/tarampampam/3proxy-docker/issues
-[link_pulls]:https://github.com/tarampampam/3proxy-docker/pulls
-[link_build_status]:https://github.com/tarampampam/3proxy-docker/actions
-[link_create_issue]:https://github.com/tarampampam/3proxy-docker/issues/new
-[link_license]:https://github.com/tarampampam/3proxy-docker/blob/master/LICENSE
-[link_docker_tags]:https://hub.docker.com/r/tarampampam/3proxy/tags
-[link_docker_hub]:https://hub.docker.com/r/tarampampam/3proxy/
-[link_ghcr]:https://github.com/tarampampam/3proxy-docker/pkgs/container/3proxy
-[link_3proxy]:https://github.com/z3APA3A/3proxy
