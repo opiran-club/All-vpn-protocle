@@ -6,7 +6,7 @@ wget -4 https://github.com/opiran-club/All-vpn-protocle/openvpn && cd openvpn
 run setup for Initialize the configuration files and set port and porotcol 
 
 ```bash
-bash fisrtconf.sh
+bash install.sh
 ```
 and certificates
 ```bash
